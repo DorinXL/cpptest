@@ -54,6 +54,8 @@ inline double real(const complex& x) {
 }
 
 inline complex operator + (const complex& x, const complex& y) {
+    //complex()用的是typename()，创建临时对象，没有名称
+    //类似于int()
     return complex(real(x) + real(y), imag(x) + imag(y));
 }
 
